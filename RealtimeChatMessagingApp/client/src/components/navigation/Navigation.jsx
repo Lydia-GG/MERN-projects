@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../../assets/logo.png';
+import './Navigation.css';
 const Navigation = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const Navigation = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img src={logo} style={{ width: 50, height: 50 }} />
+              <img src={logo} />
             </Navbar.Brand>
           </LinkContainer>
 
