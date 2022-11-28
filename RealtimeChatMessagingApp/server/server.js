@@ -2,9 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import http from 'http';
 import { Server } from 'socket.io';
-
-// const express = require('express');
-// const cors = require("cors")
+import './src/connectDB/connectDB.js';
+import userRouter from './src/routes/userRoute.js';
 
 const app = express();
 
@@ -13,6 +12,7 @@ const rooms = ['general', 'tech', 'finance', 'crypto'];
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
+app.use('/users', userRouter);
 
 const server = http.createServer(app);
 const PORT = 5001;
