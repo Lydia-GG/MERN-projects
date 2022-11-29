@@ -14,6 +14,9 @@ app.use(express.json());
 app.use(cors());
 app.use('/users', userRouter);
 
+app.get('/', (req, res) => {
+  res.send('hello');
+});
 const server = http.createServer(app);
 const PORT = 5001;
 const io = new Server(server, {

@@ -8,10 +8,10 @@ const createUser = async (req, res) => {
     res.status(201).json(user);
   } catch (error) {
     let msg;
-    if (e.code == 11000) {
+    if (error.code == 11000) {
       msg = 'user is already exists';
     } else {
-      msg = e.message;
+      msg = error.message;
     }
     res.status(400).json(msg);
   }
