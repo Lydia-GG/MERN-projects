@@ -1,1 +1,1 @@
-# Blog MERN-STACK
+# Blog App MERN-STACK
