@@ -1,2 +1,2 @@
-# Blog App MERN-STACk 
+# Blog App MERN STACk 
 app
