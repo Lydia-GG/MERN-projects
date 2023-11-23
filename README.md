@@ -1,4 +1,4 @@
 # MERN projects
 This repo will contain projects designed using:
-### Used technologies 
+### Used technologies :
 React - mongoDB - NodeJs - Express.
